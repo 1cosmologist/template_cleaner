@@ -4,7 +4,8 @@ Template(-based E-to-B leakage) cleaner for CMB B-mode analysis.
 
 ## Overview
 
-This package implements the E-mode recycling method for cleaning B-mode maps from template-based E-to-B leakage, commonly encountered in CMB polarization analysis. The method works by identifying the B-mode leakage pattern induced by a mask from T and E modes, and then subtracting the leakage contribution from the observed B-mode map.
+This package implements the template-based cleaning for B-mode maps from Liu, H. et al. (2019). This method works reasonably for $\ell > 30$ B-mode analysis for few percent sky fractions. 
+The method works by identifying the B-mode leakage pattern induced by a mask from T and E modes, and then subtracting the leakage contribution from the observed B-mode map.
 
 ## Installation
 
@@ -124,7 +125,7 @@ Emode_recycler(IQU_in, mask_in, lmax_in=None)
 
 ##### compute_template()
 
-Compute the T and E mode template and corresponding B-mode leakage map.
+Compute the T and E mode template and corresponding B-mode leakage map. 
 
 This method extracts the T and E mode spherical harmonic coefficients from the full TEB alms, transforms them back to map space, and then re-analyzes to identify the B-mode leakage pattern induced by the mask.
 
@@ -241,7 +242,7 @@ cleaned_B = recycler.B_f
 
 ## Citation
 
-This code implements Liu, H. et al (2019)   
+This code implements blind E-to-B leakage correction method from Liu, H. et al (2019)   
 ADS: https://ui.adsabs.harvard.edu/abs/2019JCAP...04..046L/abstract
 
 
@@ -249,9 +250,3 @@ ADS: https://ui.adsabs.harvard.edu/abs/2019JCAP...04..046L/abstract
 
 This program is free software licensed under the GNU General Public License v3.
 See LICENSE file for details.
-
-## Contact
-
-For more information, visit: https://github.com/1cosmologist/template_cleaner
-
-Contact: Shamik Ghosh (shamik@ustc.edu.cn)
