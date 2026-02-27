@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "template_cleaner"
-version = "0.1.0"
+version = "1.0.0"
 description = "Template-based E-to-B leakage cleaner for CMB B-mode analysis"
 readme = "README.md"
 requires-python = ">=3.7"
 license = {text = "GPL-3.0"}
 authors = [
-    {name = "Shamik Ghosh", email = "shamik@ustc.edu.cn"}
+    {name = "Shamik Ghosh", email = "thequarkexpress@gmail.com"}
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
